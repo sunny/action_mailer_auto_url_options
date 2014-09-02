@@ -4,6 +4,7 @@ ActionMailer automatic URL options
 Make ActionMailer use the current request host, port and protocol for URL
 generation.
 
+
 Why?
 ----
 
@@ -23,7 +24,7 @@ Install
 Add this line to your Rails application's Gemfile:
 
 ```ruby
-gem 'action_mailer_auto_url_options', github: 'sunny/action_mailer_auto_url_options'
+gem 'action_mailer_auto_url_options'
 ```
 
 Run `bundle install`, restart your server and that's it!
@@ -39,12 +40,16 @@ If you delay your emails with Sidekiq, include this middleware in your
 require "action_mailer_auto_url_options/middleware/sidekiq"
 ```
 
-Security consideration
-----------------------
+
+Security considerations
+-----------------------
 
 This does not protect you from host-injection exploits, so please whitelist
-requests to the allowed domain name in production. Read more about [this vulnerability](http://seclists.org/fulldisclosure/2008/Jun/169) because
-your app may already be vulnerable if it does any kind of cache.
+requests to the allowed domain name in production.
+
+Read more about [this vulnerability](http://seclists.org/fulldisclosure/2008/Jun/169)
+because your app may already be vulnerable if it does any kind of cache.
+
 
 License
 -------
