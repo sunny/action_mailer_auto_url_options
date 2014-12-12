@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "Controllers" do
+describe "Controllers", type: :controller do
 
   controller do
     def index
@@ -23,7 +23,7 @@ describe "Controllers" do
   end
 
   it "sets the protocol" do
-    request.stub(:protocol).and_return("ftp://")
+    allow(request).to receive(:protocol).and_return("ftp://")
     get :index
 
     protocol = ActionMailer::Base.default_url_options[:protocol]

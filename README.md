@@ -55,3 +55,18 @@ License
 -------
 
 MIT
+
+Development
+-----------
+
+Clone this project, then install dependencies with:
+
+```sh
+$ bundle
+```
+
+And launch tests with:
+
+```sh
+$ bundle exec rspec
+```
