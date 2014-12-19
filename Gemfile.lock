@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    action_mailer_auto_url_options (1.0.0)
+    action_mailer_auto_url_options (1.0.1)
       rails (~> 4.1)
 
 GEM
