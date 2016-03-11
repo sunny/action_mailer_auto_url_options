@@ -40,19 +40,6 @@ If you delay your emails with Sidekiq, include this middleware in your
 require "action_mailer_auto_url_options/middleware/sidekiq"
 ```
 
-
-Security considerations
------------------------
-
-This does not protect you from host-injection exploits, so please whitelist
-requests to the allowed domain name in production.
-
-Read more about [this vulnerability](http://seclists.org/fulldisclosure/2008/Jun/169)
-because your app may already be vulnerable if it does any kind of cache.
-
-Ways to mitigate against this vulnerability are discussed
-[in this issue](https://github.com/sunny/action_mailer_auto_url_options/issues/1).
-
 License
 -------
 
