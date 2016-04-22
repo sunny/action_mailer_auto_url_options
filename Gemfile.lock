@@ -138,7 +138,7 @@ PLATFORMS
 DEPENDENCIES
   action_mailer_auto_url_options!
   combustion
-  rspec-rails
+  rspec-rails (>= 3.1)
 
 BUNDLED WITH
    1.11.2
