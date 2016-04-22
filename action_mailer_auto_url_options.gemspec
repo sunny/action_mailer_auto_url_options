@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", ">= 4.1", "~> 5.0.x"
 
-  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "rspec-rails", ">= 3.1"
   s.add_development_dependency "combustion"
 end
