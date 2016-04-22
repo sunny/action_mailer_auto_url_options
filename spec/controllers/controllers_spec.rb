@@ -23,9 +23,10 @@ describe "Controllers", type: :controller do
   end
 
   it "sets the protocol" do
-    allow(request).to receive(:protocol).and_return("ftp://")
+    request.env["HTTPS"] = "on"
+
     get :index
 
-    expect(options[:protocol]).to eq("ftp://")
+    expect(options[:protocol]).to eq("https://")
   end
 end
