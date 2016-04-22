@@ -5,13 +5,13 @@ describe "Controllers", type: :controller do
 
   controller do
     def index
-      render text: "OK"
+      render plain: "OK"
     end
   end
 
   before do
     @routes.draw do
-      get 'index' => 'anonymous#index'
+      get "index" => "anonymous#index"
     end
   end
 

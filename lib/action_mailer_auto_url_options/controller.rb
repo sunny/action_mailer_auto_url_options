@@ -5,7 +5,7 @@ module ActionMailerAutoUrlOptions
     extend ActiveSupport::Concern
 
     included do
-      before_filter :make_action_mailer_use_request_host_and_protocol
+      before_action :make_action_mailer_use_request_host_and_protocol
     end
 
     private
