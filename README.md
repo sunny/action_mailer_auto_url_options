@@ -21,7 +21,7 @@ for example.
 Install
 -------
 
-Add this line to your Rails application's Gemfile:
+Add these lines to your Rails application's Gemfile:
 
 ```ruby
 # Add the current request host and protocol in email URLs
