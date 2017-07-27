@@ -24,7 +24,8 @@ Install
 Add this line to your Rails application's Gemfile:
 
 ```ruby
-gem 'action_mailer_auto_url_options'
+# Add the current request host and protocol in email URLs
+gem "action_mailer_auto_url_options"
 ```
 
 Run `bundle install`, restart your server and that's it!
