@@ -34,8 +34,8 @@ Run `bundle install`, restart your server and that's it!
 Usage with Sidekiq
 ------------------
 
-If you delay your emails with Sidekiq, include this middleware in your
-`sidekiq.rb` initializer:
+If you delay your emails with Sidekiq, include this middleware in
+`config/initializers/sidekiq.rb`:
 
 ```ruby
 require "action_mailer_auto_url_options/middleware/sidekiq"
