@@ -4,7 +4,7 @@ module Sidekiq::Middleware::ActionMailerDefaultUrlOption
   class Client
     def call(worker_class, msg, queue, redis_pool)
       options = ActionMailer::Base.default_url_options
-      msg['action_mailer_default_url_options'] ||= options
+      msg['action_mailer_default_url_options'] ||= options.presence
       yield
     end
   end
