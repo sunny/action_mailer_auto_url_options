@@ -13,7 +13,7 @@ module Sidekiq::Middleware::ActionMailerDefaultUrlOption
   # current thread to use them.
   class Server
     def call(worker, msg, queue)
-      options = msg['action_mailer_default_url_options'].symbolize_keys
+      options = msg['action_mailer_default_url_options'].try(:symbolize_keys)
       ActionMailer::Base.default_url_options = options if options
       yield
     end
