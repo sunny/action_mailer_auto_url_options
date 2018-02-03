@@ -1,5 +1,5 @@
-unreleased
-----------
+1.0.2
+-----
 
 Fixes:
 - Fix undefined method symbolize keys for ActionMailer::Base::NullMail string.
