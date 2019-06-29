@@ -1,3 +1,12 @@
+unreleased
+----------
+
+1.0.3
+-----
+
+Fixes:
+- Looser Rails version requirement for Rails 6.
+
 1.0.2
 -----
 
@@ -8,7 +17,7 @@ Fixes:
 -----
 
 Fixes:
-- Looser Rails version requirement
+- Looser Rails version requirement.
 
 1.0.0
 -----
