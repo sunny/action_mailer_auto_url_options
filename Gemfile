@@ -14,4 +14,4 @@ gemspec
 # gem 'debugger'
 
 # To test Rails 6
-gem 'rails', '6.0.3.1'
+gem 'rails', '6.0.3.2'
