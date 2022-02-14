@@ -14,4 +14,4 @@ gemspec
 # gem 'debugger'
 
 # To test Rails versions
-gem 'rails', '7.0.2'
+gem 'rails', '7.0.2.2'
